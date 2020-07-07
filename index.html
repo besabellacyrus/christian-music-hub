@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrisitan Music Hub</title>
+    <style>
+        @font-face {
+            font-family: MontserratSemiBold;
+            src: url('fonts/Montserrat-SemiBold.ttf');
+            font-display: swap;
+        }
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+        body {
+           padding: 0;
+           margin: 0;
+           font-family: 'MontserratSemiBold';
+           color: #fff;
+        }
+        .main-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; 
+            background: url('img/BG@2x.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .bg-element {
+            background: url(img/bg-elements.svg);
+            z-index: 9999;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 39rem;
+            width: 100%;
+        }
+        .main-wrapper span {
+            font-size: 2rem;
+            margin-top: 10rem;
+        }
+
+        .logo {
+            height: 5rem;
+        }
+        .logo img {
+            height: 100%;
+        }
+        @media screen and (max-width: 1440px) {
+            .main-wrapper span {
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+            .main-wrapper {
+                background-position-x: -26rem;
+            }
+            .main-wrapper span {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-element"></div>
+    <div class="main-wrapper">
+        <span>Streaming Soon...</span>
+        <div class="logo">
+            <img src="img/cmh-logo.svg" alt="Christian Music Hub">
+        </div>
+    </div>
+</body>
+</html>
