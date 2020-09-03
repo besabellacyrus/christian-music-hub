@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chrisitan Music Hub</title>
     <style>
-        @font-face {
-            font-family: MontserratSemiBold;
-            src: url('fonts/Montserrat-SemiBold.ttf');
-            font-display: swap;
+      /* Montserrat-Regular */
+      @font-face {
+        font-family: MontserratSemiBold;
+        src: url("fonts/Montserrat-SemiBold.ttf");
+        font-display: swap;
+      }
+      @font-face {
+        font-family: MontserratRegular;
+        src: url("fonts/Montserrat-Regular.ttf");
+        font-display: swap;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+      }
+      p {
+        font-family: "MontserratRegular";
+        text-shadow: 0 0 0 #f000, 0 0 1px transparent;
+      }
+      .main-wrapper {
+        /* display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; */
+        display: grid;
+        align-items: center;
+        background: url("img/BG@2x.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+      }
+      .bg-element {
+        background: url(img/bg-elements.svg);
+        z-index: 9999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 39rem;
+        width: 100%;
+      }
+      .main-wrapper span {
+        font-size: 2rem;
+        margin-top: 10rem;
+      }
+      .main-content {
+        max-width: 71rem;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+      .main-content h1 {
+        color: #008da8;
+        font-family: "MontserratSemiBold";
+      }
+
+      .logo {
+        height: 5rem;
+      }
+      .logo img {
+        height: 100%;
+        margin: 0 auto;
+        width: 100%;
+      }
+      @media screen and (max-width: 1440px) {
+        .main-wrapper span {
+          font-size: 4rem;
         }
-        *, *:before, *:after {
-            box-sizing: border-box;
-        }
-        body {
-           padding: 0;
-           margin: 0;
-           font-family: 'MontserratSemiBold';
-           color: #fff;
-        }
+      }
+
+      @media screen and (max-width: 425px) {
         .main-wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center; 
-            background: url('img/BG@2x.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100vh;
-        }
-        .bg-element {
-            background: url(img/bg-elements.svg);
-            z-index: 9999;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 39rem;
-            width: 100%;
+          background-position-x: -26rem;
         }
         .main-wrapper span {
-            font-size: 2rem;
-            margin-top: 10rem;
+          font-size: 2rem;
         }
-
-        .logo {
-            height: 5rem;
-        }
-        .logo img {
-            height: 100%;
-        }
-        @media screen and (max-width: 1440px) {
-            .main-wrapper span {
-                font-size: 4rem;
-            }
-        }
-
-        @media screen and (max-width: 425px) {
-            .main-wrapper {
-                background-position-x: -26rem;
-            }
-            .main-wrapper span {
-                font-size: 2rem;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="bg-element"></div>
     <div class="main-wrapper">
-        <span>Streaming Soon...</span>
+      <div class="main-content">
         <div class="logo">
-            <img src="img/cmh-logo.svg" alt="Christian Music Hub">
+          <img src="img/cmh-logo.svg" alt="Christian Music Hub" />
         </div>
+        <div>
+          <h1>About Us</h1>
+          <p>
+            Christian Music Hub is a world-class central repository of pure
+            Christian music worldwide. Made by Christian artists for every race,
+            for every nation, for every color, for everyone. All music and other
+            corresponding resources are vetted to be of good morals, promotes
+            godliness and are child-friendly.
+          </p>
+          <p>
+            With Christian Music Hub, it’s easy to find the right music for
+            every activity – for your worship services, events, acoustic moments
+            and many more.
+          </p>
+          <p>
+            On your phone, your computer, your tablet and more. It contains
+            thousands of tracks; old and new. Whether you’re driving, riding,
+            working out, partying or relaxing, the right music is always at your
+            fingertips. Choose what you want to listen to, or let Christian
+            Music Hub surprise you.
+          </p>
+          <p>
+            You can also be able to just sit back after creating your own
+            playlist to enjoy or be shared with your friends.
+          </p>
+          <p>
+            Also available are lyrics, minus 1, song stories and artists’
+            biographies.
+          </p>
+          <p>
+            Subscribe now and build your playlist that promotes God through
+            music.
+          </p>
+          <h1>Our Purpose</h1>
+          <p>
+            In line with our parent organization’s purpose, Christian Music Hub
+            will be a network of Christian artists and musicians which aims to
+            unite believers from all denominations to influence and lead the
+            world to worship our Lord and Savior, Jesus Christ.
+          </p>
+          <p>
+            To provide Christian artists worldwide a platform to promote their
+            music to their actual market. And for consumers, to be assured of a
+            platform that is world-class, affordable, free from compromises and
+            irrelevant contents.
+          </p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
